@@ -2,6 +2,7 @@ package chap02.textbook;
 
 public class ByteExample {
 	public static void main(String[] args) {
+		// 학원에서 작업완료.
 		byte var1 = -128;
 		byte var2 = -30;
 		byte var3 = 0;
