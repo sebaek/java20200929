@@ -8,6 +8,7 @@ public class PromotionExample {
 		
 		char charValue = '가';
 		intValue = charValue;
+		System.out.println("가의 문자 = " +  charValue);
 		System.out.println("가의 유니코드 = " +  intValue);
 		
 		intValue = 500;
@@ -19,3 +20,6 @@ public class PromotionExample {
 		System.out.println(doubleValue);
 	}
 }
+
+
+
