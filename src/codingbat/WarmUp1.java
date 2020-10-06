@@ -19,4 +19,11 @@ public class WarmUp1 {
 		return sum;
 	}
 
+	public int diff21(int n) {
+		int diff = 21 - n;
+		diff = (n > 21) ? diff * 2 : diff;
+		diff = (diff < 0) ? -diff : diff;
+		return diff;
+	}
+
 }
