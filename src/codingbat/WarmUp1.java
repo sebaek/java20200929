@@ -36,4 +36,18 @@ public class WarmUp1 {
 		return (sum == 10) || (a == 10) || (b == 10);
 	}
 
+	public boolean nearHundred(int n) {
+		boolean d100 = (n >= 90) && (n <= 110);
+		boolean d200 = (n >= 190) && (n <= 210);
+
+		return d100 || d200;
+	}
+
+	public boolean posNeg(int a, int b, boolean negative) {
+		boolean aneg = a < 0;
+		boolean bneg = b < 0;
+
+		return negative ? (aneg && bneg) : (aneg ^ bneg);
+	}
+
 }
