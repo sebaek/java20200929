@@ -50,4 +50,22 @@ public class WarmUp1 {
 		return negative ? (aneg && bneg) : (aneg ^ bneg);
 	}
 
+	public String notString(String str) {
+		int ind = str.indexOf("not");
+
+		if (ind != 0) {
+			String res = "not " + str;
+			return res;
+		}
+
+		return str;
+	}
+
+	public String missingChar(String str, int n) {
+		String left = str.substring(0, n);
+		String right = str.substring(n + 1);
+
+		return left + right;
+	}
+
 }
