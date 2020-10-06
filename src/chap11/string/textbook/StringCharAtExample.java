@@ -2,7 +2,7 @@ package chap11.string.textbook;
 
 public class StringCharAtExample {
 	public static void main(String[] args) {
-		String ssn = "010624-1230123";
+		String ssn = "010624-4230123";
 		char sex = ssn.charAt(7);
 
 		switch (sex) {
