@@ -26,4 +26,14 @@ public class WarmUp1 {
 		return diff;
 	}
 
+	public boolean parrotTrouble(boolean talking, int hour) {
+		return talking && (hour < 7 || hour > 20);
+	}
+
+	public boolean makes10(int a, int b) {
+		int sum = a + b;
+
+		return (sum == 10) || (a == 10) || (b == 10);
+	}
+
 }
