@@ -68,4 +68,19 @@ public class WarmUp1 {
 		return left + right;
 	}
 
+	public String frontBack(String str) {
+		int len = str.length();
+
+		if (len > 1) {
+			char front = str.charAt(0);
+			char back = str.charAt(len - 1);
+
+			String mid = str.substring(1, len - 1);
+
+			return back + mid + front;
+		} else {
+			return str;
+		}
+	}
+
 }
