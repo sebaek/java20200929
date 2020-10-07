@@ -83,4 +83,23 @@ public class WarmUp1 {
 		}
 	}
 
+	public String front3(String str) {
+		int len = str.length();
+
+		String front = str;
+
+		if (len >= 3) {
+			front = str.substring(0, 3);
+		}
+
+		String res = "";
+		int i = 0;
+		while (i < 3) {
+			res += front;
+			i++;
+		}
+
+		return res;
+	}
+
 }
