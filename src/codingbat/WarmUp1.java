@@ -102,4 +102,10 @@ public class WarmUp1 {
 		return res;
 	}
 
+	public String backAround(String str) {
+		char c = str.charAt(str.length() - 1);
+
+		return c + str + c;
+	}
+
 }
