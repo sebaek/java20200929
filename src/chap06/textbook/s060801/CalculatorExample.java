@@ -5,7 +5,7 @@ public class CalculatorExample {
 		Calculator myCalc = new Calculator();
 		myCalc.powerOn();
 		
-		int result1 = myCalc.plus(5, 6);
+		int result1 = myCalc.plus(5, 9);
 		System.out.println("result1: " + result1);
 		
 		byte x = 10;
