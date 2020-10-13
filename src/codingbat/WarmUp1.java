@@ -108,4 +108,39 @@ public class WarmUp1 {
 		return c + str + c;
 	}
 
+	public boolean or35(int n) {
+		boolean div3 = (n % 3) == 0;
+		boolean div5 = (n % 5) == 0;
+
+		return div3 || div5;
+	}
+
+	public String front22(String str) {
+		String front = str;
+
+		if (str.length() >= 2) {
+			front = str.substring(0, 2);
+		}
+
+		return front + str + front;
+	}
+
+	public boolean startHi(String str) {
+		return str.startsWith("hi");
+
+		// if (str.length() >= 2) {
+		// String front = str.substring(0, 2);
+		// return front.equals("hi");
+		// } else {
+		// return false;
+		// }
+
+	}
+
+	public boolean icyHot(int temp1, int temp2) {
+		boolean t1 = temp1 < 0 && temp2 > 100;
+		boolean t2 = temp1 > 100 && temp2 < 0;
+
+		return t1 || t2;
+	}
 }
