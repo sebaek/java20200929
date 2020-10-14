@@ -11,5 +11,14 @@ public class Car {
 		Car myCar = new Car();
 		myCar.speed = 60;
 		myCar.run();
+		
+		Math.random();
+		Math.abs(-3);
 	}
 }
+
+
+
+
+
+
