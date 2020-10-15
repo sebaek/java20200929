@@ -166,4 +166,13 @@ public class WarmUp1 {
 		return ateen ^ bteen;
 	}
 
+	public String delDel(String str) {
+		int idx = str.indexOf("del");
+
+		if (idx == 1) {
+			return str.replaceFirst("del", "");
+		} else {
+			return str;
+		}
+	}
 }
