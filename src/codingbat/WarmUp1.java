@@ -143,4 +143,19 @@ public class WarmUp1 {
 
 		return t1 || t2;
 	}
+
+	public boolean in1020(int a, int b) {
+		boolean ina = a >= 10 && a <= 20;
+		boolean inb = b >= 10 && b <= 20;
+
+		return ina || inb;
+	}
+
+	public boolean hasTeen(int a, int b, int c) {
+		boolean ateen = a >= 13 && a <= 19;
+		boolean bteen = b >= 13 && b <= 19;
+		boolean cteen = c >= 13 && c <= 19;
+
+		return ateen || bteen || cteen;
+	}
 }
