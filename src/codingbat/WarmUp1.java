@@ -175,4 +175,36 @@ public class WarmUp1 {
 			return str;
 		}
 	}
+
+	public boolean mixStart(String str) {
+		if (str.length() >= 3) {
+			String ix = str.substring(1, 3);
+			if (ix.equals("ix")) {
+				return true;
+			}
+		}
+
+		return false;
+	}
+
+	public String startOz(String str) {
+		String first = "";
+		if (str.length() >= 1) {
+			char f = str.charAt(0);
+			if (f == 'o') {
+				first = "o";
+			}
+		}
+
+		String second = "";
+		if (str.length() >= 2) {
+			char c = str.charAt(1);
+			if (c == 'z') {
+				second = "z";
+			}
+		}
+
+		return first + second;
+	}
+
 }
