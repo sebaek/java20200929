@@ -17,6 +17,14 @@ public class MyApp {
 		r1.setVolume(3);
 //		r1.search("google");
 		
-		
+		System.out.println(r1 instanceof RemoteControl);
+		System.out.println(r1 instanceof Searchable);
+		System.out.println(s1 instanceof RemoteControl);
 	}
 }
+
+
+
+
+
+
