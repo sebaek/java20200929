@@ -207,4 +207,35 @@ public class WarmUp1 {
 		return first + second;
 	}
 
+	public int intMax(int a, int b, int c) {
+		int max;
+
+		max = a > b ? a : b;
+		max = max > c ? max : c;
+
+		return max;
+	}
+
+	public int close10(int a, int b) {
+		int diffa = Math.abs(10 - a);
+		int diffb = Math.abs(10 - b);
+
+		if (diffa == diffb) {
+			return 0;
+		} else if (diffa < diffb) {
+			return a;
+		} else {
+			return b;
+		}
+	}
+
+	public boolean in3050(int a, int b) {
+		boolean a3040 = a >= 30 && a <= 40;
+		boolean b3040 = b >= 30 && b <= 40;
+		boolean a4050 = a >= 40 && a <= 50;
+		boolean b4050 = b >= 40 && b <= 50;
+
+		return (a3040 && b3040) || (a4050 && b4050);
+	}
+
 }
