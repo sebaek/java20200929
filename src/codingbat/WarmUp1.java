@@ -238,4 +238,11 @@ public class WarmUp1 {
 		return (a3040 && b3040) || (a4050 && b4050);
 	}
 
+	public int max1020(int a, int b) {
+		int acopy = (a >= 10 && a <= 20) ? a : 0;
+		int bcopy = (b >= 10 && b <= 20) ? b : 0;
+
+		return acopy > bcopy ? acopy : bcopy;
+	}
+
 }
