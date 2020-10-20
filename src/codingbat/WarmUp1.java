@@ -245,4 +245,46 @@ public class WarmUp1 {
 		return acopy > bcopy ? acopy : bcopy;
 	}
 
+	public boolean stringE(String str) {
+		int cnt = 0;
+		for (int i = 0; i < str.length(); i++) {
+			char c = str.charAt(i);
+			if (c == 'e') {
+				cnt++;
+			}
+		}
+
+		return cnt >= 1 && cnt <= 3;
+	}
+
+	public boolean lastDigit(int a, int b) {
+		int alast = a % 10;
+		int blast = b % 10;
+
+		return alast == blast;
+	}
+
+	public String endUp(String str) {
+		int len = str.length();
+
+		if (len <= 3) {
+			return str.toUpperCase();
+		} else {
+			String front = str.substring(0, len - 3);
+			String last = str.substring(len - 3, len);
+			return front + last.toUpperCase();
+		}
+
+	}
+
+	public String everyNth(String str, int n) {
+		String res = "";
+
+		for (int i = 0; i < str.length(); i += n) {
+			res += str.charAt(i);
+		}
+
+		return res;
+	}
+
 }
