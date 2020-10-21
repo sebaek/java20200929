@@ -1,4 +1,4 @@
-package chap05;
+package chap05.lecture;
 
 public class ArrayReferenceObjectExample {
 	public static void main(String[] args) {
