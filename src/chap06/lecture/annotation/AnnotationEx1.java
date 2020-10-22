@@ -16,7 +16,7 @@ public class AnnotationEx1 {
 		return super.toString();
 	}
 	
-	@MyAnnotation
+	@MyAnnotation(value="abc", number=5, names={"c","d"})
 	public static void mymethod() {
 		
 	}
