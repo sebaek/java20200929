@@ -44,4 +44,29 @@ public class WarmUp2 {
 		return cnt;
 	}
 
+	boolean doubleX(String str) {
+		int xinx = str.indexOf("x");
+		int xxinx = str.indexOf("xx");
+
+		if (xinx == -1) {
+			return false;
+		}
+
+		if (xinx == xxinx) {
+			return true;
+		}
+
+		return false;
+	}
+
+	public String stringBits(String str) {
+		String res = "";
+
+		for (int i = 0; i < str.length(); i += 2) {
+			res += str.charAt(i);
+		}
+
+		return res;
+	}
+
 }
