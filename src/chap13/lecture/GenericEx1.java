@@ -18,3 +18,6 @@ public class GenericEx1 {
 //		o3.method2("java");
 	}
 }
+
+
+
