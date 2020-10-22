@@ -26,7 +26,6 @@ public class ReflectionExample {
 		System.out.println("[필드 정보]");
 		Field[] fields = clazz.getDeclaredFields();
 		for (Field field : fields) {
-			System.out.print(Modifier.toString(field.getModifiers()) + " ");
 			System.out.println(field.getType().getSimpleName() + " " + field.getName());
 		}
 		System.out.println();
@@ -34,7 +33,6 @@ public class ReflectionExample {
 		System.out.println("[메소드 정보]");
 		Method[] methods = clazz.getDeclaredMethods();
 		for (Method method : methods) {
-			System.out.print(Modifier.toString(method.getModifiers()) + " ");
 			System.out.print(method.getName() + "(");
 			Class[] parameters = method.getParameterTypes();
 			printParameters(parameters);
