@@ -27,4 +27,21 @@ public class WarmUp2 {
 		return res;
 	}
 
+	int countXX(String str) {
+		int cnt = 0;
+		int len = str.length();
+
+		// String sub = str.substring(0, 2);
+		// str.substring(len-2, len);
+
+		for (int i = 0; i <= len - 2; i++) {
+			String sub = str.substring(i, i + 2);
+			if (sub.equals("xx")) {
+				cnt++;
+			}
+		}
+
+		return cnt;
+	}
+
 }
