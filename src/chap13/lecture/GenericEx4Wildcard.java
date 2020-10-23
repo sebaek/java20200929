@@ -32,6 +32,7 @@ public class GenericEx4Wildcard {
 //		Course<? super Student> courseW3 = new Course<HighStudent>("a",1);
 		
 		courseW0.add(new Student("a"));
+		
 //		courseW0.add(new Object());
 		Course<Object> co = (Course<Object>) courseW0;
 		co.add(new Object());
@@ -43,10 +44,14 @@ public class GenericEx4Wildcard {
 		Course<? extends Student> courseE1 = new Course<Student>("a", 5);
 		Course<? extends Student> courseE2 = new Course<HighStudent>("a", 5);
 		
+		Student st = courseE1.get();
+		
 		Course<?> courseA1 = new Course<Person>("a", 5);
 		Course<?> courseA2 = new Course<Worker>("a", 5);
 		Course<?> courseA3 = new Course<Student>("a", 5);
 		Course<?> courseA4 = new Course<HighStudent>("a", 5);
+		
+		
 	}
 }
 

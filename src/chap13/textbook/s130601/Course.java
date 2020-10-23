@@ -25,6 +25,10 @@ public class Course<T> {
 			}
 		}
 	}
+	
+	public T get() {
+		return null;
+	}
 }
 
 
