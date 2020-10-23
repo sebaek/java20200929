@@ -20,6 +20,7 @@ public class HashMapExample1 {
 		
 		Set<String> keySet = map.keySet();
 		Iterator<String> keyIterator = keySet.iterator();
+		
 		while (keyIterator.hasNext()) {
 			String key = keyIterator.next();
 			Integer value = map.get(key);

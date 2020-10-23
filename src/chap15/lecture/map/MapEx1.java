@@ -33,10 +33,16 @@ public class MapEx1 {
 		System.out.println(map.size());
 		
 		// 전체 탐색
-		System.out.println("향상된 for");
+		System.out.println("향상된 for / keySet");
 		Set<Integer> keys = map.keySet();
 		for (Integer key : keys) {
 			System.out.println(key + ":" + map.get(key));
+		}
+		
+		System.out.println("향상된 for / entrySet");
+		Set<Map.Entry<Integer, String>> entrys = map.entrySet();
+		for (Map.Entry<Integer, String> entry : entrys) {
+			System.out.println(entry.getKey() + ":" + entry.getValue());
 		}
 	}
 }
