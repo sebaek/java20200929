@@ -5,6 +5,7 @@ import java.util.Queue;
 
 public class QueueExample {
 	public static void main(String[] args) {
+		// FIFO (First In First Out)
 		Queue<Message> messageQueue = new LinkedList<>();
 
 		messageQueue.offer(new Message("sendMail", "홍길동"));

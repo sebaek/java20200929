@@ -3,6 +3,7 @@ package chap15.textbook.s150601;
 import java.util.Stack;
 
 public class StackExample {
+	// LIFO (Last In First Out)
 	public static void main(String[] args) {
 		Stack<Coin> coinBox = new Stack<>();
 
