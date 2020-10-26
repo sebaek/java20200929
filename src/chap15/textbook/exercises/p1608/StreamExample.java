@@ -1,5 +1,6 @@
 package chap15.textbook.exercises.p1608;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
@@ -34,7 +35,19 @@ public class StreamExample {
 
 		Map<String, List<String>> groupingMap = new HashMap<>();
 		// 작성위치
-		
+		for (Member member : list) {
+			String name = member.getName();
+			String job = member.getJob();
+			
+			List<String> names = groupingMap.get(job);
+			if (names == null) {
+				List<String> newList = new ArrayList<>();
+				newList.add(name);
+				groupingMap.put(job, newList);
+			} else {
+				names.add(name);
+			}
+		}
 		
 		// 출력
 		List<String> developers = groupingMap.get("개발자");
