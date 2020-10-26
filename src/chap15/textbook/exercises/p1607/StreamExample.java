@@ -34,7 +34,11 @@ public class StreamExample {
 		List<Member> developers = new ArrayList<>();
 		
 		// 작성위치
-		
+		for (Member member : list) {
+			if (member.getJob().equals("개발자")) {
+				developers.add(member);
+			}
+		}
 		
 		// 출력
 		for (Member member : developers) {

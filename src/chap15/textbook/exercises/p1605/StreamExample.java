@@ -14,8 +14,12 @@ public class StreamExample {
 		
 		List<String> javaList = new ArrayList<>();
 		// 작성 위치
-		
-		
+		for (int i = 0; i < list.size(); i++) {
+			String item = list.get(i);
+			if (item.toLowerCase().contains("java")) {
+					javaList.add(item);
+			}
+		}
 		
 		// 출력
 		for (String java : javaList) {

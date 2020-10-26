@@ -32,7 +32,11 @@ public class StreamExample {
 		
 		double avg = 0.0;
 		// 작성 위치
-		
+		int sum = 0;
+		for (Member member : list) {
+			sum += member.getAge();
+		}
+		avg = (double) sum / list.size();
 		
 		// 출력
 		System.out.println("평균 나이: " + avg);
