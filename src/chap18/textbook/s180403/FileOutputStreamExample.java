@@ -2,7 +2,6 @@ package chap18.textbook.s180403;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import java.io.IOException;
 
 public class FileOutputStreamExample {
 	public static void main(String[] args) throws Exception {
