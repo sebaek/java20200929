@@ -10,6 +10,23 @@ public class WriterEx1 {
 		
 		writer.write('한');
 		
+		char[] arr = new char[5];
+		arr[0] = '자';
+		arr[1] = '바';
+		arr[2] = '신';
+		arr[3] = '용';
+		arr[4] = '권';
+		
+		writer.write(arr);
+		writer.write(arr, 2, 3);
+		writer.write("\n이것이자바다");
+		
 		writer.close();
 	}
 }
+
+
+
+
+
+
