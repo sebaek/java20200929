@@ -69,4 +69,14 @@ public class WarmUp2 {
 		return res;
 	}
 
+	public String stringSplosion(String str) {
+		String res = "";
+
+		for (int i = 1; i <= str.length(); i++) {
+			res += str.substring(0, i);
+		}
+
+		return res;
+	}
+
 }
