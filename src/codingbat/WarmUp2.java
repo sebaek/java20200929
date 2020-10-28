@@ -79,4 +79,20 @@ public class WarmUp2 {
 		return res;
 	}
 
+	public int last2(String str) {
+		int len = str.length();
+		if (len >= 2) {
+			int cnt = 0;
+			String last2 = str.substring(len - 2, len);
+			for (int i = 0; i < len - 1; i++) {
+				String sub = str.substring(i, i + 2);
+				if (sub.equals(last2)) {
+					cnt++;
+				}
+			}
+			return cnt - 1;
+		}
+		return 0;
+	}
+
 }
