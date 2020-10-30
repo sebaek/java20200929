@@ -20,3 +20,7 @@ public class ConsumerExample {
 		objIntConsumer.accept("java", 8);
 	}
 }
+
+
+
+
