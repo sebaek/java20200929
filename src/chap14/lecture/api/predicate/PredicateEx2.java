@@ -16,7 +16,7 @@ public class PredicateEx2 {
 		System.out.println("---값 확인");
 		list.forEach(e -> System.out.println(e));
 		
-		list.removeIf(filter);
+		list.removeIf(e -> e < 0 || 100 < e);
 		
 		// 0~100 값만 남도록
 		System.out.println("---값 확인");
