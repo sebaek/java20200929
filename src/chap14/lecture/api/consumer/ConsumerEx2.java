@@ -2,6 +2,7 @@ package chap14.lecture.api.consumer;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 public class ConsumerEx2 {
 	public static void main(String[] args) {
@@ -13,7 +14,13 @@ public class ConsumerEx2 {
 		map.put("servlet", 4);
 		map.put("jquery", 3);
 		
-		map.forEach((k, v) -> System.out.println(k + ":" + v)); 
+		map.forEach((k, v) -> System.out.println(k + ":" + v));
+		
+		System.out.println("====key set 사용====");
+		Set<String> keys = map.keySet();
+		for (String key : keys) {
+			System.out.println(key + ":" + map.get(key));
+		}
 	}
 }
 
