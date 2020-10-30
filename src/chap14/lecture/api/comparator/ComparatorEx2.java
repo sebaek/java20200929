@@ -12,7 +12,7 @@ public class ComparatorEx2 {
 		for (int i = 0; i < 10; i++) {
 			list.add(new Member(random.nextInt(100), "java"));
 		}
-//		list.sort(c);
+		list.sort((a, b) -> a.getId() - b.getId());
 		
 		list.forEach(e -> System.out.println(e));
 	}
