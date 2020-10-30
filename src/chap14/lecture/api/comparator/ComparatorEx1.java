@@ -12,7 +12,7 @@ public class ComparatorEx1 {
 		// 왼쪽이 작으면 음수
 		// 같으면 0
 		// 왼쪽이 크면 양수
-		Comparator<Integer> asc = (x, y) -> x - y;
+		Comparator<Integer> asc = (x, y) -> y - x;
 		
 		List<Integer> list = new ArrayList<>();
 		for (int i = 0; i < 10; i++) {
