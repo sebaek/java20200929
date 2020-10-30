@@ -1,6 +1,8 @@
 package chap14.textbook.s140402;
 
 public class UsingLocalVariable {
+	
+	
 	void method(int arg) {
 		int localVar = 40;
 		
