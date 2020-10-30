@@ -17,7 +17,7 @@ public class OperatorEx2 {
 		System.out.println("----- 값 확인");
 		list.forEach(e -> System.out.println(e));
 		
-//		list.replaceAll(operator);
+		list.replaceAll(x -> x * 2);
 		
 		System.out.println("----- 값 확인");
 		list.forEach(e -> System.out.println(e));
