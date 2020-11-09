@@ -116,4 +116,16 @@ public class WarmUp2 {
 		return false;
 	}
 
+	public boolean array123(int[] nums) {
+		for (int i = 1; i < nums.length - 1; i++) {
+			if (nums[i] == 2) {
+				if (nums[i - 1] == 1 && nums[i + 1] == 3) {
+					return true;
+				}
+			}
+		}
+
+		return false;
+	}
+
 }
