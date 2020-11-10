@@ -128,4 +128,39 @@ public class WarmUp2 {
 		return false;
 	}
 
+	public int stringMatch(String a, String b) {
+		int lena = a.length();
+		int lenb = b.length();
+
+		int loop = Math.min(lena, lenb) - 1;
+
+		int cnt = 0;
+		for (int i = 0; i < loop; i++) {
+			String suba = a.substring(i, i + 2);
+			String subb = b.substring(i, i + 2);
+
+			if (suba.equals(subb)) {
+				cnt++;
+			}
+		}
+		return cnt;
+	}
+
+	public String stringX(String str) {
+		String res = "";
+
+		for (int i = 0; i < str.length(); i++) {
+			char c = str.charAt(i);
+			if (i == 0 || i == str.length() - 1) {
+				res += c;
+				continue;
+			}
+			if (c != 'x') {
+				res += c;
+			}
+		}
+
+		return res;
+	}
+
 }
