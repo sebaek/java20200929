@@ -207,4 +207,22 @@ public class WarmUp2 {
 		return true;
 	}
 
+	public boolean has271(int[] nums) {
+		// 2, 7, 1
+		// -1 ~ 3
+
+		// n, n+5, (n-3 ~ n+1)
+
+		for (int i = 0; i < nums.length - 2; i++) {
+			if (nums[i + 1] == nums[i] + 5) {
+				if (nums[i + 2] >= nums[i] - 3 && nums[i + 2] <= nums[i] + 1) {
+
+					return true;
+				}
+			}
+		}
+
+		return false;
+	}
+
 }
