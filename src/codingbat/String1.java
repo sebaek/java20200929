@@ -24,4 +24,49 @@ public class String1 {
 		return last + last + last;
 	}
 
+	public String firstTwo(String str) {
+		int len = str.length();
+
+		if (len > 2) {
+			return str.substring(0, 2);
+		}
+
+		return str;
+	}
+
+	public String firstHalf(String str) {
+		int len = str.length();
+		return str.substring(0, len / 2);
+	}
+
+	public String withoutEnd(String str) {
+
+		return str.substring(1, str.length() - 1);
+	}
+
+	public String comboString(String a, String b) {
+		int lena = a.length();
+		int lenb = b.length();
+
+		if (lena < lenb) {
+			return a + b + a;
+		} else {
+			return b + a + b;
+		}
+	}
+
+	public String nonStart(String a, String b) {
+		return a.substring(1) + b.substring(1);
+	}
+
+	public String left2(String str) {
+		return str.substring(2) + str.substring(0, 2);
+	}
+
+	public String right2(String str) {
+		int len = str.length();
+
+		return str.substring(len - 2) + str.substring(0, len - 2);
+	}
+
 }
