@@ -69,4 +69,34 @@ public class String1 {
 		return str.substring(len - 2) + str.substring(0, len - 2);
 	}
 
+	public String theEnd(String str, boolean front) {
+		String res = "";
+
+		if (front) {
+			res = str.substring(0, 1);
+		} else {
+			res = str.substring(str.length() - 1);
+		}
+
+		return res;
+	}
+
+	public String withouEnd2(String str) {
+		if (str.length() < 3) {
+			return "";
+		} else {
+			return str.substring(1, str.length() - 1);
+		}
+	}
+	
+	public String middleTwo(String str) {
+	  int mid = str.length() / 2;
+	  return str.substring(mid-1, mid+1);
+	}
+	
+	public boolean endsLy(String str) {
+	  return str.endsWith("ly");
+	}
+
+
 }
