@@ -88,15 +88,34 @@ public class String1 {
 			return str.substring(1, str.length() - 1);
 		}
 	}
-	
+
 	public String middleTwo(String str) {
-	  int mid = str.length() / 2;
-	  return str.substring(mid-1, mid+1);
-	}
-	
-	public boolean endsLy(String str) {
-	  return str.endsWith("ly");
+		int mid = str.length() / 2;
+		return str.substring(mid - 1, mid + 1);
 	}
 
+	public boolean endsLy(String str) {
+		return str.endsWith("ly");
+	}
+
+	public String twoChar(String str, int index) {
+		if (index + 2 > str.length() || index < 0) {
+			return str.substring(0, 2);
+		}
+
+		return str.substring(index, index + 2);
+	}
+
+	public String middleThree(String str) {
+		int mid = str.length() / 2;
+
+		return str.substring(mid - 1, mid + 2);
+	}
+
+	public boolean hasBad(String str) {
+		int idx = str.indexOf("bad");
+
+		return idx == 0 || idx == 1;
+	}
 
 }
