@@ -125,4 +125,33 @@ public class String1 {
 		return str.substring(0, 2);
 	}
 
+	public String lastChars(String a, String b) {
+		a = at(a);
+		b = at(b);
+
+		int lena = a.length();
+		int lenb = b.length();
+
+		return a.substring(0, 1) + b.substring(lenb - 1);
+	}
+
+	private String at(String str) {
+		while (str.length() < 1) {
+			str += "@";
+		}
+		return str;
+	}
+
+	public String conCat(String a, String b) {
+		int lena = a.length();
+		int lenb = b.length();
+
+		if (lena > 0 && lenb > 0) {
+			if (a.charAt(lena - 1) == b.charAt(0)) {
+				b = b.substring(1);
+			}
+		}
+		return a + b;
+	}
+
 }
