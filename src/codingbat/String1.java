@@ -118,4 +118,11 @@ public class String1 {
 		return idx == 0 || idx == 1;
 	}
 
+	public String atFirst(String str) {
+		while (str.length() < 2) {
+			str += "@";
+		}
+		return str.substring(0, 2);
+	}
+
 }
