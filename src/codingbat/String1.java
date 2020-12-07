@@ -167,4 +167,40 @@ public class String1 {
 
 		return str.substring(0, len - 2) + last2 + last1;
 	}
+
+	public String seeColor(String str) {
+		if (str.startsWith("red")) {
+			return "red";
+		}
+
+		if (str.startsWith("blue")) {
+			return "blue";
+		}
+
+		return "";
+	}
+
+	public boolean frontAgain(String str) {
+		int len = str.length();
+
+		if (len < 2) {
+			return false;
+		}
+
+		String front = str.substring(0, 2);
+		String end = str.substring(len - 2);
+
+		return front.equals(end);
+
+	}
+
+	public String minCat(String a, String b) {
+		int lena = a.length();
+		int lenb = b.length();
+
+		int min = (lena < lenb) ? lena : lenb;
+
+		return a.substring(lena - min) + b.substring(lenb - min);
+	}
+
 }
