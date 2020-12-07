@@ -154,4 +154,17 @@ public class String1 {
 		return a + b;
 	}
 
+	public String lastTwo(String str) {
+
+		int len = str.length();
+
+		if (len < 2) {
+			return str;
+		}
+
+		char last1 = str.charAt(len - 2);
+		char last2 = str.charAt(len - 1);
+
+		return str.substring(0, len - 2) + last2 + last1;
+	}
 }
