@@ -230,4 +230,24 @@ public class String1 {
 
 	}
 
+	public String deFront(String str) {
+		String res = "";
+
+		for (int i = 0; i < str.length(); i++) {
+			if (i == 0 && str.charAt(i) == 'a') {
+				res += str.charAt(i);
+			}
+
+			if (i == 1 && str.charAt(i) == 'b') {
+				res += str.charAt(i);
+			}
+
+			if (i >= 2) {
+				res += str.charAt(i);
+			}
+		}
+
+		return res;
+	}
+
 }
