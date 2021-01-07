@@ -250,4 +250,36 @@ public class String1 {
 		return res;
 	}
 
+	public String startWord(String str, String word) {
+		int strLen = str.length();
+		int wordLen = word.length();
+
+		if (strLen < wordLen) {
+			return "";
+		}
+
+		word = str.charAt(0) + word.substring(1);
+
+		if (str.startsWith(word)) {
+			return word;
+		} else {
+			return "";
+		}
+	}
+
+	public String withoutX(String str) {
+		String res = "";
+
+		if (str.startsWith("x")) {
+			res = str.substring(1);
+		} else {
+			res = str;
+		}
+
+		if (res.endsWith("x")) {
+			res = res.substring(0, res.length() - 1);
+		}
+
+		return res;
+	}
 }
