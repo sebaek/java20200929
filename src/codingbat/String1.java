@@ -282,4 +282,17 @@ public class String1 {
 
 		return res;
 	}
+
+	public String withoutX2(String str) {
+		String res = "";
+
+		for (int i = 0; i < str.length(); i++) {
+			if (i > 1 || str.charAt(i) != 'x') {
+				res += str.charAt(i);
+			}
+		}
+
+		return res;
+	}
+
 }
